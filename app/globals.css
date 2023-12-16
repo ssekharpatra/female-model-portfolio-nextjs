@@ -22,10 +22,6 @@ p {
    color: #000000;
 }
 
-section {
-   min-height: 100vh;
-}
-
 section:nth-child(odd) {
    background-color: #dbbec0;
 }

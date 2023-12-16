@@ -1,5 +1,5 @@
 const ModelingStats = () => {
-	return <section>ModelingStats</section>;
+	return <section className="h-[100vh]">ModelingStats</section>;
 };
 
 export default ModelingStats;

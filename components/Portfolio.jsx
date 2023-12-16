@@ -1,5 +1,5 @@
 const Portfolio = () => {
-	return <section>Portfolio</section>;
+	return <section className="h-[100vh]">Portfolio</section>;
 };
 
 export default Portfolio;

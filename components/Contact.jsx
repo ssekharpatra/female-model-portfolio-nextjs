@@ -1,5 +1,5 @@
 const Contact = () => {
-	return <section>Contact</section>;
+	return <section className="h-[100vh]">Contact</section>;
 };
 
 export default Contact;
