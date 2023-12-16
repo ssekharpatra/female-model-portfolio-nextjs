@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import { tenorSans, lovelace, brownSugar } from "./fonts/fonts";
 import "./globals.css";
 
@@ -9,10 +10,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<html lang="en">
+		<html lang="en" className="!scroll-smooth">
 			<body
 				className={`${tenorSans.variable} ${lovelace.variable} ${brownSugar.variable}`}
 			>
+				<Header />
 				{children}
 			</body>
 		</html>

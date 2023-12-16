@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const About = () => {
 	return (
-		<section className="flex justify-between p-12 h-[100vh] gap-6">
+		<section id="about" className="flex justify-between p-12 h-[100vh] gap-6">
 			<div className="flex flex-col justify-between w-3/5">
 				<div>
 					<span className="pageNumber text-4xl">02</span>

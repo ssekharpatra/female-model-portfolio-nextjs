@@ -5,7 +5,10 @@ import { motion } from "framer-motion";
 
 const Intro = () => {
 	return (
-		<section className="flex flex-col justify-end p-12 relative h-[100vh]">
+		<section
+			id="home"
+			className="flex flex-col justify-end p-12 relative h-[100vh]"
+		>
 			<div className="absolute left-1/2 top-[47%] -translate-x-1/2 -translate-y-[47%]">
 				<motion.h1
 					className="text-9xl text-center capitalize"
