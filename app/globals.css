@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2 {
+   font-family: var(--lovelace-font);
+}
+
+h3,
+h4,
+h5,
+h6,
+p {
+   font-family: var(--tenorSans-font);
+}
+
+.pageNumber {
+   font-family: var(--brownSugar-font);
+}
