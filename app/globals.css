@@ -5,6 +5,7 @@
 h1,
 h2 {
    font-family: var(--lovelace-font);
+   color: #000000;
 }
 
 h3,
@@ -13,8 +14,22 @@ h5,
 h6,
 p {
    font-family: var(--tenorSans-font);
+   color: #000000;
 }
 
 .pageNumber {
    font-family: var(--brownSugar-font);
+   color: #000000;
+}
+
+section {
+   min-height: 100vh;
+}
+
+section:nth-child(odd) {
+   background-color: #dbbec0;
+}
+
+section:nth-child(even) {
+   background-color: #a2b8cf;
 }
