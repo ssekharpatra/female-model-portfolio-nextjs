@@ -13,13 +13,9 @@ h4,
 h5,
 h6,
 p,
-a {
+a,
+td {
    font-family: var(--tenorSans-font);
-   color: #000000;
-}
-
-.pageNumber {
-   font-family: var(--brownSugar-font);
    color: #000000;
 }
 
@@ -29,4 +25,13 @@ section:nth-child(odd) {
 
 section:nth-child(even) {
    background-color: #a2b8cf;
+}
+
+td:first-child {
+   text-transform: uppercase;
+}
+
+.pageNumber {
+   font-family: var(--brownSugar-font);
+   color: #000000;
 }
