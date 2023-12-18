@@ -1,9 +1,15 @@
+"use client";
+
+import { useSectionInView } from "@/lib/hooks";
 import Image from "next/image";
 
 const Portfolio = () => {
+	const { ref } = useSectionInView("Portfolio");
+
 	return (
 		<>
 			<section
+				ref={ref}
 				id="portfolio"
 				className="p-12 pb-16 h-[100vh] flex flex-col justify-between"
 			>

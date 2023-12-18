@@ -1,8 +1,13 @@
+"use client";
+
+import { useSectionInView } from "@/lib/hooks";
 import Image from "next/image";
 
 const ModelingStats = () => {
+	const { ref } = useSectionInView("Modeling Stats");
+
 	return (
-		<section id="modelingStats" className="p-12 h-[100vh]">
+		<section ref={ref} id="modelingStats" className="p-12 h-[100vh]">
 			<div className="relative">
 				<span className="pageNumber text-4xl absolute">06</span>
 			</div>

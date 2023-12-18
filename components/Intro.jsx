@@ -2,10 +2,16 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+// import { useActiveSectionContext } from "@/context/ActiveSectionContext";
+import { useSectionInView } from "@/lib/hooks";
 
 const Intro = () => {
+	const { ref } = useSectionInView("Home", 0.5);
+	// const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
 	return (
 		<section
+			ref={ref}
 			id="home"
 			className="flex flex-col justify-end p-12 relative h-[100vh]"
 		>

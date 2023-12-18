@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import { tenorSans, lovelace, brownSugar } from "./fonts/fonts";
 import "./globals.css";
+import ActiveSectionContextProvider from "@/context/ActiveSectionContext";
 
 export const metadata = {
 	title: "Samira Hadid | Professional Model",
@@ -14,8 +15,10 @@ export default function RootLayout({ children }) {
 			<body
 				className={`${tenorSans.variable} ${lovelace.variable} ${brownSugar.variable}`}
 			>
-				<Header />
-				{children}
+				<ActiveSectionContextProvider>
+					<Header />
+					{children}
+				</ActiveSectionContextProvider>
 			</body>
 		</html>
 	);

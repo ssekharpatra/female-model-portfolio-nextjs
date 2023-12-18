@@ -1,9 +1,15 @@
+"use client";
+
+import { useSectionInView } from "@/lib/hooks";
 import Image from "next/image";
 import Link from "next/link";
 
 const Contact = () => {
+	const { ref } = useSectionInView("Contact");
+
 	return (
 		<section
+			ref={ref}
 			id="contact"
 			className="p-12 h-[100vh] relative flex flex-col justify-between"
 		>
