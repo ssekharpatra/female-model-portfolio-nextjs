@@ -7,16 +7,20 @@ const ModelingStats = () => {
 	const { ref } = useSectionInView("Modeling Stats");
 
 	return (
-		<section ref={ref} id="modelingStats" className="p-12 h-[100vh]">
+		<section
+			ref={ref}
+			id="modelingStats"
+			className="p-5 lg:p-12 h-auto md:h-screen scroll-mt-[4.5rem] md:scroll-mt-0"
+		>
 			<div className="relative">
-				<span className="pageNumber text-4xl absolute">06</span>
+				<span className="pageNumber text-3xl md:text-4xl absolute">06</span>
 			</div>
-			<div className="flex justify-between h-full">
-				<div className="flex flex-col">
-					<h2 className="text-8xl capitalize mt-auto mb-12">
+			<div className="flex flex-col md:flex-row gap-8 justify-between h-full">
+				<div className="flex flex-col md:justify-center w-full md:w-1/2">
+					<h2 className="text-6xl md:text-7xl lg:text-8xl capitalize mt-20 lg:mt-auto mb-8 md:mb-12">
 						Modeling <br /> Stats
 					</h2>
-					<table class="table-auto w-4/5 h-72">
+					<table className="table-auto w-4/5 h-72">
 						<tbody>
 							<tr className="mb-6">
 								<td>Height</td>
@@ -53,7 +57,7 @@ const ModelingStats = () => {
 						</tbody>
 					</table>
 				</div>
-				<div>
+				<div className="w-full md:w-1/2 lg:w-auto">
 					<Image
 						src="/img-9.jpg"
 						alt="Image 9"

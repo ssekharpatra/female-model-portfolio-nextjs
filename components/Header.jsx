@@ -50,7 +50,7 @@ export default function Header() {
 						>
 							<Link
 								href={link.hash}
-								className="flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition"
+								className="flex w-max items-center justify-center px-3 py-3 hover:text-gray-950 transition"
 								onClick={() => {
 									setActiveSection(link.name);
 									setTimeOfLastClick(Date.now());
