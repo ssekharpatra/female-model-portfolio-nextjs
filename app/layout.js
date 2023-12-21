@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import { tenorSans, lovelace, brownSugar } from "./fonts/fonts";
 import "./globals.css";
 import ActiveSectionContextProvider from "@/context/ActiveSectionContext";
+import Footer from "@/components/Footer";
 
 export const metadata = {
 	title: "Samira Hadid | Professional Model",
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
 				<ActiveSectionContextProvider>
 					<Header />
 					{children}
+					<Footer />
 				</ActiveSectionContextProvider>
 			</body>
 		</html>
