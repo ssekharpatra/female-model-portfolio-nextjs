@@ -17,11 +17,14 @@ const About = () => {
 				<div>
 					<motion.span
 						className="pageNumber text-3xl md:text-4xl"
-						initial={{ opacity: 0, y: 100 }}
+						initial={{ opacity: 0, y: 50 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						transition={{
 							type: "tween",
 							duration: 1,
+						}}
+						viewport={{
+							once: true,
 						}}
 					>
 						02
@@ -33,7 +36,9 @@ const About = () => {
 						transition={{
 							type: "tween",
 							duration: 0.8,
-							delay: 0.2,
+						}}
+						viewport={{
+							once: true,
 						}}
 					>
 						More <br /> about me
@@ -46,7 +51,10 @@ const About = () => {
 						transition={{
 							type: "tween",
 							duration: 0.8,
-							// delay: 0.2,
+							delay: 0.2,
+						}}
+						viewport={{
+							once: true,
 						}}
 					>
 						With a captivating presence honed over 3 years in the fashion
@@ -60,7 +68,10 @@ const About = () => {
 						transition={{
 							type: "tween",
 							duration: 0.8,
-							delay: 0.2,
+							delay: 0.4,
+						}}
+						viewport={{
+							once: true,
 						}}
 					>
 						My journey is a fusion of passion and dedication, creating a visual
@@ -78,6 +89,9 @@ const About = () => {
 					type: "tween",
 					duration: 1,
 					delay: 0.3,
+				}}
+				viewport={{
+					once: true,
 				}}
 			>
 				<Image
